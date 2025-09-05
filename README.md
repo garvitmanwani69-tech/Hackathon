@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Bus Management System</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+  <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body>
+  <header>
+    <h1>🚍 Smart Bus Management System</h1>
+  </header>
+
+  <section class="qr-section">
+    <h2>🎓 Student QR Generator</h2>
+    <input type="text" id="student-id" placeholder="Enter Student ID" />
+    <button onclick="generateQR()">Generate QR</button>
+    <div id="qrcode"></div>
+  </section>
+
+  <section class="scanner-section">
+    <h2>🚌 Bus QR Scanner</h2>
+    <div id="reader" style="width:300px;"></div>
+    <div id="scan-result"></div>
+  </section>
+
+  <section class="dashboard-section">
+    <h2>📊 Admin Dashboard</h2>
+    <table>
+      <tr><th>ID</th><th>Fee Status</th><th>Attendance</th></tr>
+      <tr><td>STU001</td><td>Paid</td><td>Present</td></tr>
+      <tr><td>STU002</td><td>Unpaid</td><td>Absent</td></tr>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+...
+<script src="script.js"></script>
+</body>
+</html>
